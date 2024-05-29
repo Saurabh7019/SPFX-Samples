@@ -11,6 +11,10 @@ declare interface ISiteTourWebPartStrings {
   AppOfficeEnvironment: string;
   AppOutlookEnvironment: string;
   UnknownEnvironment: string;
+  btnTitle: string;
+  tourListTitle: string;
+  disableAutoPlay: string;
+  startTour: string;
 }
 
 declare module 'SiteTourWebPartStrings' {

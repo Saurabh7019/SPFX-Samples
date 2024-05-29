@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/09/ProvisioningSchema">
+    <pnp:Preferences Generator="PnP.Framework, Version=1.13.1.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
+    <pnp:Templates ID="CONTAINER-TEMPLATE-SITETOUR">
+        <pnp:ProvisioningTemplate ID="TEMPLATE-SITETOUR" Version="1" Scope="RootSite">
+            <pnp:SiteFields>
+                <Field Type="Note" DisplayName="Tour Description" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" Group="SPFX Samples" ID="{94857690-9531-4922-be61-ce2fdf2ed3ec}" StaticName="SC_Description" Name="SC_Description" CustomFormatter="" RestrictedMode="TRUE" AppendOnly="FALSE" UnlimitedLengthInDocumentLibrary="FALSE" AllowDeletion="TRUE"></Field>
+                <Field Type="Choice" DisplayName="Selector" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="SPFX Samples" ID="{b75591f4-313d-4e62-9860-c755991e4768}" StaticName="SC_Selector" Name="SC_Selector" AllowDeletion="TRUE" CustomFormatter="">
+                    <CHOICES>
+                        <CHOICE>heading</CHOICE>
+                        <CHOICE>class</CHOICE>
+                        <CHOICE>id</CHOICE>
+                        <CHOICE>webpartId</CHOICE>
+                    </CHOICES>
+                </Field>
+                <Field Type="Text" DisplayName="Control ID" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="SPFX Samples" ID="{520b009e-a918-4d3e-b2c0-6bff079a70f4}" StaticName="SC_ControlID" Name="SC_ControlID" AllowDeletion="TRUE" CustomFormatter=""></Field>
+                <Field Name="SC_TourOrder" FromBaseType="FALSE" Type="Number" DisplayName="Order" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="SPFX Samples" ID="{46f08485-8f2c-4d03-821f-1e1273c11cec}" StaticName="SC_TourOrder" AllowDeletion="TRUE" CustomFormatter="" Percentage="FALSE"></Field>
+                <Field Type="MultiChoice" DisplayName="Tour Language" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="SPFX Samples" ID="{21abb73a-63ce-45f3-90cc-05e0ca501bde}" ShowInViewForms="FALSE" Hidden="False" StaticName="SC_ChoiceLanguage" Name="SC_ChoiceLanguage" AllowDeletion="TRUE" CustomFormatter="">
+                    <CHOICES>
+                        <CHOICE>Arabic</CHOICE>
+                        <CHOICE>Azerbaijani</CHOICE>
+                        <CHOICE>Basque</CHOICE>
+                        <CHOICE>Bosnian (Latin)</CHOICE>
+                        <CHOICE>Bulgarian</CHOICE>
+                        <CHOICE>Catalan</CHOICE>
+                        <CHOICE>Chinese (Simplified)</CHOICE>
+                        <CHOICE>Chinese (Traditional)</CHOICE>
+                        <CHOICE>Croatian</CHOICE>
+                        <CHOICE>Czech</CHOICE>
+                        <CHOICE>Danish</CHOICE>
+                        <CHOICE>Dari</CHOICE>
+                        <CHOICE>Dutch</CHOICE>
+                        <CHOICE>English</CHOICE>
+                        <CHOICE>Estonian</CHOICE>
+                        <CHOICE>Finnish</CHOICE>
+                        <CHOICE>French</CHOICE>
+                        <CHOICE>Galician</CHOICE>
+                        <CHOICE>German</CHOICE>
+                        <CHOICE>Greek</CHOICE>
+                        <CHOICE>Hebrew</CHOICE>
+                        <CHOICE>Hindi</CHOICE>
+                        <CHOICE>Hungarian</CHOICE>
+                        <CHOICE>Indonesian</CHOICE>
+                        <CHOICE>Irish</CHOICE>
+                        <CHOICE>Italian</CHOICE>
+                        <CHOICE>Japanese</CHOICE>
+                        <CHOICE>Kazakh</CHOICE>
+                        <CHOICE>Korean</CHOICE>
+                        <CHOICE>Latvian</CHOICE>
+                        <CHOICE>Lithuanian</CHOICE>
+                        <CHOICE>Macedonian</CHOICE>
+                        <CHOICE>Malay</CHOICE>
+                        <CHOICE>Norwegian (Bokmål)</CHOICE>
+                        <CHOICE>Polish</CHOICE>
+                        <CHOICE>Portuguese (Brazil)</CHOICE>
+                        <CHOICE>Portuguese (Portugal)</CHOICE>
+                        <CHOICE>Romanian</CHOICE>
+                        <CHOICE>Russian</CHOICE>
+                        <CHOICE>Serbian (Cyrillic, Serbia)</CHOICE>
+                        <CHOICE>Serbian (Latin)</CHOICE>
+                        <CHOICE>Serbian (Latin, Serbia)</CHOICE>
+                        <CHOICE>Slovak</CHOICE>
+                        <CHOICE>Slovenian</CHOICE>
+                        <CHOICE>Spanish</CHOICE>
+                        <CHOICE>Swedish</CHOICE>
+                        <CHOICE>Thai</CHOICE>
+                        <CHOICE>Turkish</CHOICE>
+                        <CHOICE>Ukrainian</CHOICE>
+                        <CHOICE>Vietnamese</CHOICE>
+                        <CHOICE>Welsh</CHOICE>
+                    </CHOICES>
+                    <Default>English</Default>
+                </Field>
+                <Field Type="Boolean" DisplayName="Is active?" EnforceUniqueValues="FALSE" Indexed="FALSE" Group="SPFX Samples" ID="{aef3c139-b694-4a3c-a1ce-fcfbb1d52e80}" StaticName="SC_IsActive" Name="SC_IsActive" Required="FALSE" AllowDeletion="TRUE" CustomFormatter="">
+                    <Default>1</Default>
+                </Field>
+            </pnp:SiteFields>
+            <pnp:ContentTypes>
+                <pnp:ContentType DisplayFormClientSideComponentId="" DisplayFormClientSideComponentProperties="" NewFormClientSideComponentProperties="" EditFormClientSideComponentId="" EditFormClientSideComponentProperties="" ID="0x01004F6A3E09769A284C9D36328E30D5642B" Name="Site tour item" Description="Site tour configuration item." Group="SPFX Samples" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" UpdateChildren="false">
+                    <pnp:FieldRefs>
+                        <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" UpdateChildren="true" />
+                        <pnp:FieldRef ID="94857690-9531-4922-be61-ce2fdf2ed3ec" Name="SC_Description" UpdateChildren="true" />
+                        <pnp:FieldRef ID="b75591f4-313d-4e62-9860-c755991e4768" Name="SC_Selector" UpdateChildren="true" />
+                        <pnp:FieldRef ID="520b009e-a918-4d3e-b2c0-6bff079a70f4" Name="SC_ControlID" UpdateChildren="true" />
+                        <pnp:FieldRef ID="46f08485-8f2c-4d03-821f-1e1273c11cec" Name="SC_TourOrder" UpdateChildren="true" />
+                        <pnp:FieldRef ID="21abb73a-63ce-45f3-90cc-05e0ca501bde" Name="SC_ChoiceLanguage" UpdateChildren="true" />
+                        <pnp:FieldRef ID="aef3c139-b694-4a3c-a1ce-fcfbb1d52e80" Name="SC_IsActive" UpdateChildren="true" />
+                        <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+                    </pnp:FieldRefs>
+                </pnp:ContentType>
+            </pnp:ContentTypes>
+            <pnp:Lists>
+                <pnp:ListInstance Title="Site tour configurations" Description="This list contains site tour configuration items." DocumentTemplate="" TemplateType="100" Url="Lists/SiteTourConfigurations" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" NoCrawl="true" DefaultDisplayFormUrl="{site}/Lists/SiteTourConfigurations/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/SiteTourConfigurations/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/SiteTourConfigurations/NewForm.aspx" ImageUrl="{site}/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+                    <pnp:ContentTypeBindings>
+                        <pnp:ContentTypeBinding ContentTypeID="0x01004F6A3E09769A284C9D36328E30D5642B" Default="true" />
+                        <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+                    </pnp:ContentTypeBindings>
+                    <pnp:Views>
+                        <View Name="{1F53A2BC-F298-43DC-B220-EA336952BD1E}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/SiteTourConfigurations/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="{site}/_layouts/15/images/generic.png?rev=47">
+                            <Query />
+                            <ViewFields>
+                                <FieldRef Name="LinkTitle" />
+                                <FieldRef Name="SC_Description" />
+                                <FieldRef Name="SC_Selector" />
+                                <FieldRef Name="SC_ControlID" />
+                                <FieldRef Name="SC_TourOrder" />
+                                <FieldRef Name="SC_ChoiceLanguage" />
+                                <FieldRef Name="SC_IsActive" />
+                            </ViewFields>
+                            <RowLimit Paged="TRUE">30</RowLimit>
+                            <JSLink>clienttemplates.js</JSLink>
+                        </View>
+                    </pnp:Views>
+                    <pnp:Fields>
+                        <Field ID="{76d13cd2-1bae-45a5-8b74-545b87b65037}" Name="_ColorTag" DisplaceOnUpgrade="TRUE" ShowInFileDlg="FALSE" ReadOnly="TRUE" Type="Text" DisplayName="Color Tag" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_ColorTag" FromBaseType="TRUE" ColName="nvarchar4" />
+                    </pnp:Fields>
+                    <pnp:FieldRefs>
+                        <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
+                        <pnp:FieldRef ID="94857690-9531-4922-be61-ce2fdf2ed3ec" Name="SC_Description" DisplayName="Tour Description" />
+                        <pnp:FieldRef ID="b75591f4-313d-4e62-9860-c755991e4768" Name="SC_Selector" DisplayName="Selector" />
+                        <pnp:FieldRef ID="520b009e-a918-4d3e-b2c0-6bff079a70f4" Name="SC_ControlID" DisplayName="Control ID" />
+                        <pnp:FieldRef ID="46f08485-8f2c-4d03-821f-1e1273c11cec" Name="SC_TourOrder" DisplayName="Order" />
+                        <pnp:FieldRef ID="21abb73a-63ce-45f3-90cc-05e0ca501bde" Name="SC_ChoiceLanguage" DisplayName="Tour Language" />
+                        <pnp:FieldRef ID="aef3c139-b694-4a3c-a1ce-fcfbb1d52e80" Name="SC_IsActive" DisplayName="Is active?" />
+                    </pnp:FieldRefs>
+                </pnp:ListInstance>
+            </pnp:Lists>
+        </pnp:ProvisioningTemplate>
+    </pnp:Templates>
+</pnp:Provisioning>

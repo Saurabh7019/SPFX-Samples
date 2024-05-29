@@ -1,7 +1,9 @@
+import { SPHttpClient } from "@microsoft/sp-http";
+import { ServiceScope } from "@microsoft/sp-core-library";
+
 export interface ISiteTourProps {
-  description: string;
-  isDarkTheme: boolean;
-  environmentMessage: string;
-  hasTeamsContext: boolean;
-  userDisplayName: string;
+  spHttpClient: SPHttpClient;
+  userLoginName: string;
+  siteUrl: string;
+  serviceScope: ServiceScope;
 }
