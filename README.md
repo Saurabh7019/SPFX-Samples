@@ -1,5 +1,9 @@
 # spfx-samples
 
+- Site guided tour
+- Welcome card
+- 
+
 ## Summary
 
 ### Site guided tour
