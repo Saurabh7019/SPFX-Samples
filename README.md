@@ -39,7 +39,7 @@ Configurations are managed through a SharePoint list, allowing for easy updates 
 
 ## Prerequisites
 
-Widgets list in the site, with the Title "Site tour configurations" and the below columns:
+List in the site, with the Title "Site tour configurations" and the below columns:
 
 Column Internal Name|Type|Required| comments
 --------------------|----|--------|----------
