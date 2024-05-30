@@ -8,7 +8,7 @@ The Guided Tour Web Part provides a brief introduction to the key components on 
 
 Configurations are managed through a SharePoint list, allowing for easy updates and customization. Additionally, you can include rich text in the content to provide detailed descriptions and instructions, enhancing the user experience.
 
-![Site guided tour](./assets/tour.mp4)
+![Site guided tour](./assets/tour.gif)
 
 ## Compatibility
 
